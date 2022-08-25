@@ -1,0 +1,33 @@
+
+#header{
+    display: grid;
+    place-items: center;
+    font-size:40px;
+    text-align: center;
+    border: 1px solid black;
+    height: 100px
+}
+#motive{
+    display: grid;
+    place-items: center;
+    border: 1px solid blue;
+    height: 200px;
+}
+#description{
+    border: 1px solid gold;
+    height: 400px;
+    display: grid;
+    place-items: center;
+}
+#bottons{
+    border: 1px solid tomato;
+    height: 180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+.grid{
+    text-align: center;
+    border : 1px solid green;
+    font-size: 30px;
+}
