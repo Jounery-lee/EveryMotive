@@ -61,9 +61,9 @@ const db = [
 
 const randomNum = Math.floor(Math.random() * db.length); // randomNum => 개별 동기의 고유한 ID라고 생각하세요.
 const dt = new Date
-// const todaysNum = dt.getDay(); 요일에 맞는 숫지
+const todaysNum = dt.getDay();
 // const todaysNum = 6; 테스트용 숫자 입력코드
-let todaysNum = randomNum; //임시 랜덤출력
+// let todaysNum = randomNum; //임시 랜덤출력
 
 const todaysData = db[todaysNum];
 
@@ -290,6 +290,9 @@ boilerPlate(noteMeasure1, noteMeasure2, ties);
 //여기까지 __//
 renderer.resize(1000, 1000);
 
+
+
+/*
 //클릭시 새로고침 코드
 function ref() {
   window.location.reload();
@@ -305,3 +308,4 @@ function ref() {
 // pracBtn.addEventListener("click", ref);
 challengeBtn.addEventListener("click", ref)
 //여기까지 //
+*/

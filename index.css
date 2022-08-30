@@ -2,7 +2,9 @@
     --font :  "Monospace", "monaco";
     --border : 1px solid black
 }
-
+body{
+    overflow: hidden;
+}
 #header{
     display: grid;
     place-items: center;
