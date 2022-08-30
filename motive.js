@@ -3,8 +3,6 @@ const {Renderer,Stave,StaveNote,Beam,Formatter,Accidental,Dot,StaveTie,Flow,} = 
 const div = document.getElementById("motive");
 const renderer = new Renderer(div, Renderer.Backends.SVG);
 
-
-
 const context = renderer.getContext();
 
 const pracBtn = document.getElementById("pracBtn");
@@ -65,7 +63,7 @@ const randomNum = Math.floor(Math.random() * db.length); // randomNum => 개별 
 const dt = new Date
 // const todaysNum = dt.getDay(); 요일에 맞는 숫지
 // const todaysNum = 6; 테스트용 숫자 입력코드
-const todaysNum = randomNum; //임시 랜덤출력
+let todaysNum = randomNum; //임시 랜덤출력
 
 const todaysData = db[todaysNum];
 
@@ -296,6 +294,13 @@ renderer.resize(1000, 1000);
 function ref() {
   window.location.reload();
 }
+
+//fetch아이디어 => renderer.resize로 Ajax까지는 성공한 코드인데 문제는 db활용이 너무 어렵다는 것이다.
+// function ref(){
+//   fetch('db.json').then((res) => res.json()).then((res)=>{
+//     console.log(res)
+//     renderer.resize(1000, 1000);
+//   })}
 
 // pracBtn.addEventListener("click", ref);
 challengeBtn.addEventListener("click", ref)

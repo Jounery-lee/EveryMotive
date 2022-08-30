@@ -1,6 +1,5 @@
 const body = document.querySelector('body')
 const modeBtn = document.getElementById('modeBtn')
-
 function changeMode(){
     console.log(modeBtn.value)
     let mode = body.style.backgroundColor

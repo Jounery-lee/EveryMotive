@@ -29,6 +29,14 @@
     font-family: var(--font);
     font-size: 30px;
 }
+#openChatLink{
+    text-decoration: none;
+    color:black;
+    transition-duration: 0.4s;
+}
+#openChatLink:hover{
+    font-size: 17px;
+}
 #modeBtn{
     margin-top: -50px;
     font-size : 50px;
