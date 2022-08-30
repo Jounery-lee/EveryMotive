@@ -3,7 +3,8 @@ const {Renderer,Stave,StaveNote,Beam,Formatter,Accidental,Dot,StaveTie,Flow,} = 
 const div = document.getElementById("motive");
 const renderer = new Renderer(div, Renderer.Backends.SVG);
 
-renderer.resize(1000, 1000);
+
+
 const context = renderer.getContext();
 
 const pracBtn = document.getElementById("pracBtn");
@@ -289,6 +290,7 @@ boilerPlate(noteMeasure1, noteMeasure2, ties);
   console.log("error");
 }
 //여기까지 __//
+renderer.resize(1000, 1000);
 
 //클릭시 새로고침 코드
 function ref() {

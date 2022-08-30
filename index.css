@@ -1,33 +1,68 @@
+:root{
+    --font :  "Monospace", "monaco";
+    --border : 1px solid black
+}
 
 #header{
     display: grid;
     place-items: center;
     font-size:40px;
     text-align: center;
-    border: 1px solid black;
-    height: 100px
+    border: var(--border);
+    height: 100px;
+    font-family: var(--font)
 }
 #motive{
     display: grid;
     place-items: center;
-    border: 1px solid blue;
+    border: var(--border);
     height: 200px;
 }
 #description{
-    border: 1px solid gold;
+    border: var(--border);
     height: 400px;
     display: grid;
     place-items: center;
+    font-family: var(--font)
+}
+#hello{
+    font-family: var(--font);
+    font-size: 30px;
+}
+#modeBtn{
+    margin-top: -50px;
+    font-size : 50px;
+    background-color: transparent;
+    border : none;
+    transition-duration: 0.4s;
+}
+#modeBtn:hover{
+    font-size : 55px;
 }
 #bottons{
-    border: 1px solid tomato;
+    border: var(--border);
     height: 180px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
+    font-family: var(--font)
 }
-.grid{
+.grid button{
     text-align: center;
-    border : 1px solid green;
+    background-color: transparent;
     font-size: 30px;
+    border : none;
+    transition-duration: 0.4s;
 }
+.grid button:hover{
+    font-size : 33px;
+}
+/* 
+@media(width<385px){
+    #description{
+        font-size: 10px;
+    }
+    .grid{
+        font-size: 20px;
+    }
+} */
